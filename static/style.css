@@ -15,6 +15,8 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* section1  begins here*/
 .section1 {
   height: 100vh;
   width: 100vw;
@@ -32,6 +34,7 @@ body {
 }
 .section1-wrapper {
   width: 100%;
+  /* background: inherit; */
   height: 100%;
   display: flex;
   flex: column;
@@ -43,11 +46,33 @@ body {
   text-align: left;
   margin-bottom: 30px;
 }
+.head span {
+  color: #161116;
+}
+.toggle {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+}
+.text-body h5 {
+  color: #fff;
+}
+.toggle .fa {
+  font-size: 2rem;
+}
+
 .head h1 {
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 900;
   font-family: var(--fontmain);
+  color: #fff;
+}
+.text-body {
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--fontlast);
+  font-weight: 600;
 }
 .section1-division2 {
   /* background-color: aliceblue; */
@@ -56,17 +81,55 @@ body {
 .section1-division1 {
   object-fit: contain;
   object-position: center;
-  width: 500px;
+  width: 400px;
   /* height: 400px; */
 }
 .section1-division1 img {
-  width: 600px;
-  height: 100%;
+  width: 500px;
+  height: 70vh;
 }
+.button-cover button:last-child {
+  background-color: transparent;
+  border: 1px solid;
+  color: #fff;
+}
+.button-cover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.button-cover button {
+  padding: 10px 40px;
+  border: 0.2px transparent;
+  border-radius: 5px;
+  background-color: #e9b3cd;
+  color: rgb(0, 0, 0.9);
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: var(--fontmini);
+}
+/* ends */
+/* media queries for all web objects */
 
+/*  screen  < 400  */
 @media screen and(max-width:600px) {
+  .section1 {
+    height: 100%;
+  }
   .section1-division1 {
     height: 400px;
     width: 100%;
   }
 }
+/* ends */
+
+/*  screen  < 900  */
+@media screen and (max-width: 900px) {
+  .section1-wrapper {
+    height: 100%;
+  }
+}
+
+/* ends */
