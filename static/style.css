@@ -43,6 +43,21 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.logo {
+  position: fixed;
+  width: 400px;
+  height: 200px;
+  top: -30px;
+  left: -40px;
+  z-index: 100;
+  object-fit: contain;
+  object-position: center;
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .head {
   text-align: left;
   margin-bottom: 30px;
@@ -60,6 +75,7 @@ body {
 }
 .toggle .fa {
   font-size: 2rem;
+  color: #fff;
 }
 
 .head h1 {
@@ -120,17 +136,64 @@ body {
   left: 0;
   top: 25%;
   transform: translate(-50, -50);
-  width: 40px;
+  width: 50px;
   font-size: 35px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .sideicon .fa {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .sideicon .fa:first-child {
-  margin-top: 20px;
+  background-color: rgb(18, 18, 175);
+  width: 50px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideicon .fa:nth-child(2) {
+  background-color: #00acee;
+  width: 50px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.sideicon .fa:nth-child(3) {
+  background-color: #171515;
+  width: 50px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideicon .fa:nth-child(4) {
+  background-color: #bc2a8d;
+  width: 50px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideicon .fa:nth-child(5) {
+  background-color: #8c929d;
+  width: 50px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* ends */
 /* media queries for all web objects */
 
