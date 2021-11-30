@@ -1,3 +1,12 @@
+/* font family  */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,700&family=Libre+Franklin&family=Ubuntu+Mono:wght@700&display=swap");
+
+/* ends */
+:root {
+  --fontmain: "Ubuntu Mono";
+  --fontmini: "Libre Franklin";
+  --fontlast: "Cormorant Infant";
+}
 * {
   padding: 0;
   margin: 0;
@@ -36,11 +45,12 @@ body {
 }
 .head h1 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 900;
+  font-family: var(--fontmain);
 }
 .section1-division2 {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   width: 500px;
 }
 .section1-division1 {
